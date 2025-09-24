@@ -3,41 +3,29 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
+    <nav className="mb-12 flex items-center justify-between py-4 glass px-4 rounded-lg mt-6">
+      <div className="flex items-center gap-4">
         <img
-          className="mx-2 w-10"
+          className="w-14 h-auto"
           src={logo}
           alt="logo"
-          style={{ width: "100px", height: "auto" }}
         />
+        <span className="font-semibold text-white">Ghofrane Mahfoudhi</span>
       </div>
-      <div className="flex space-x-6 text-lg">
-        <a href="#hero" className="hover:text-purple-700">Home</a>
-        <a href="#aboutme" className="hover:text-purple-700">About Me</a>
-        <a href="#experience" className="hover:text-purple-700">Experience</a>
-        <a href="#projects" className="hover:text-purple-700">Projects</a>
-        <a href="#certificates" className="hover:text-purple-700">Certificates</a>
-        <a href="#volunteering" className="hover:text-purple-700">Volunteering</a>
+
+      <div className="hidden md:flex items-center gap-6 text-sm">
+        <a href="#hero" className="link-accent">Home</a>
+        <a href="#aboutme" className="link-accent">About</a>
+        <a href="#experience" className="link-accent">Experience</a>
+  <a href="#projects" className="link-accent">Projects</a>
+  <a href="#skills" className="link-accent">Skills</a>
+        <a href="#volunteering" className="link-accent">Volunteering</a>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a
-          href="https://www.linkedin.com/in/farah-elloumi-735ab1269/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/faraheloumi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a href="mailto:farah.elloumi@supcom.tn">
-          <FaEnvelope />
-        </a>
+
+      <div className="flex items-center gap-4 text-xl">
+        <a href="https://www.linkedin.com/in/ghofrane-mahfoudhi/" target="_blank" rel="noopener noreferrer" className="link-accent" aria-label="LinkedIn"><FaLinkedin /></a>
+        <a href="https://github.com/GhofraneMahfoudhi" target="_blank" rel="noopener noreferrer" className="link-accent" aria-label="GitHub"><FaGithub /></a>
+        <a href="mailto:ghofrane.mahfoudhi@supcom.tn" className="link-accent" aria-label="Email"><FaEnvelope /></a>
       </div>
     </nav>
   );

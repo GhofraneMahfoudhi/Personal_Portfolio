@@ -71,3 +71,30 @@ This portfolio is a showcase of my skills, experiences, and achievements. Feedba
 
 ## Contact
 If you have any inquiries, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/farah-elloumi-735ab1269/) or [Email](farah.elloumi@supcom.tn).
+
+---
+
+## Deployment (publish a public link)
+
+You can publish this portfolio with a single public URL (like the one shown on LinkedIn). Two easy options:
+
+- GitHub Pages (automatic via the included GitHub Actions workflow):
+  1. Push your repository to GitHub under your account (e.g. `GhofraneMahfoudhi/Personal_Portfolio`).
+  2. The workflow `.github/workflows/deploy.yml` will build and deploy the `dist/` folder to the `gh-pages` branch on each push to `main`.
+  3. In the GitHub repository Settings → Pages, set the source to the `gh-pages` branch (root). GitHub gives you a URL like `https://<your-username>.github.io/Personal_Portfolio/`.
+
+- Vercel (recommended — very simple and fast):
+  1. Create a Vercel account and connect your GitHub repo.
+  2. Vercel will auto-detect the project (Framework: Vite). Use the default build command `npm run build` and output directory `dist`.
+  3. Deploy — Vercel gives you a custom domain, and you can set a custom domain `ghofrane-mahfoudhi.com` if you buy one. The public link is ready to share.
+
+PowerShell quick commands (example) — push and trigger GitHub Pages deploy:
+```powershell
+git add .
+git commit -m "Prepare site for deployment"
+git push origin main
+```
+
+If you want, I can:
+- Help push the repo to your GitHub account and configure the Pages settings.
+- Configure a Vercel deployment and show the resulting public URL.

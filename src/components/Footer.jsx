@@ -2,20 +2,36 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="py-6 text-center">
+  <footer className="py-6 text-center bg-black">
       <div className="container mx-auto px-8">
         <div className="flex flex-col items-center justify-center space-y-4">
-          <p className="text-neutral-400">
-            © 2025 Farah Elloumi. All rights reserved.
+          {/* Texte copyright */}
+          <p className="text-white/70">
+            © 2025 Ghofrane Mahfoudhi. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-2xl text-neutral-400">
-            <a href="https://www.linkedin.com/in/farah-elloumi-735ab1269/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+
+          {/* Icônes réseaux sociaux */}
+          <div className="flex space-x-6 text-2xl text-white">
+            <a 
+              href="https://www.linkedin.com/in/ghofrane-mahfoudhi//" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-secondary transition-colors"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://github.com/faraheloumi" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+            <a 
+              href="https://github.com/GhofraneMahfoudhi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-secondary transition-colors"
+            >
               <FaGithub />
             </a>
-            <a href="mailto:farah.elloumi@supcom.tn" className="hover:text-purple-400">
+            <a 
+              href="mailto:ghofrane.mahfoudhi@supcom.tn" 
+              className="hover:text-secondary transition-colors"
+            >
               <FaEnvelope />
             </a>
           </div>

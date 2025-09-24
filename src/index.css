@@ -1,9 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat&family=Poppins&family=Roboto:ital,wght@0,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Inter", sans-serif;
+  --page-bg: linear-gradient(180deg, #050510 0%, #0b0b13 60%);
+  --glass: rgba(255,255,255,0.04);
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+/* Utility: subtle glass container */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(6px) saturate(120%);
+}
+
+/* CTA button */
+.btn-cta {
+  @apply inline-flex items-center gap-3 rounded-full px-5 py-2 font-semibold text-sm text-white bg-gradient-to-r from-secondary to-[#8b5cf6] shadow-glow transition-transform transform hover:-translate-y-0.5;
+}
+
+/* Violet shadow hover utility: use as a class on cards or interactive elements */
+.violet-shadow-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.violet-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(139,92,246,0.18);
+}
+
+/* Neon hover: gradient glow, subtle lift and a sheen sweep on hover */
+.neon-hover {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(.2,.9,.2,1), box-shadow 0.25s ease;
+}
+.neon-hover::before {
+  /* stronger violet wash to increase visible brightness (keeps soft edges) */
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* brighter, still soft and centered */
+  background: radial-gradient(1200px 500px at 25% 25%, rgba(139,92,246,0.12), rgba(139,92,246,0.06) 35%, rgba(139,92,246,0.02) 60%, rgba(139,92,246,0) 85%);
+  opacity: 0;
+  transition: opacity 0.24s ease, filter 0.24s ease;
+}
+.neon-hover:hover {
+  transform: translateY(-6px);
+  /* stronger outer glow and a slightly stronger inset tint */
+  box-shadow: 0 24px 80px rgba(139,92,246,0.30), 0 10px 30px rgba(139,92,246,0.10) inset;
+}
+.neon-hover:hover::before { opacity: 1; filter: blur(10px); }
+
+/* Accent link */
+.link-accent {
+  @apply text-white hover:text-secondary transition-colors duration-200;
+}
+
+/* Accessible focus rings */
+:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(139,92,246,0.12);
+}
+
+/* Small responsive tweaks */
+@media (min-width: 1024px) {
+  .container { max-width: 1100px; }
 }

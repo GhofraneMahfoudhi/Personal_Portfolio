@@ -1,9 +1,10 @@
-import project1 from "../assets/projects/solarsys-project.png";
-import project2 from "../assets/projects/aws-project.png";
-import project3 from "../assets/projects/gen-ia-project.png";
-import project4 from "../assets/projects/fruit-vision-project.png";
-import project5 from "../assets/projects/livrili-project.png";
-import project6 from "../assets/projects/fyninsync-project.png";
+import project1 from "../assets/projects/agricultural.png";
+import project2 from "../assets/projects/Energy_Optimization.png";
+import project3 from "../assets/projects/Human_Life.png";
+import edubotVideo from "../assets/projects/EDUBOT.mp4";
+import edubotImage from "../assets/projects/EDUBOT.png";
+import quickfoodVideo from "../assets/projects/QuickFood.mp4";
+import quickfoodImage from "../assets/projects/QUICKFOOD.png";
 
 import certificate9 from "../assets/certificates/toeic.png";
 import certificate1 from "../assets/certificates/docker.png";
@@ -15,118 +16,104 @@ import certificate6 from "../assets/certificates/cloud.png";
 import certificate7 from "../assets/certificates/CKA-certification.png";
 import certificate8 from "../assets/certificates/Gitlab-CI-CD-certification.png";
 
-import volunteering1 from "../assets/volunteering/ieee.jfif";
-import volunteering2 from "../assets/volunteering/ils.jfif";
-import volunteering5 from "../assets/volunteering/mts1.jfif";
-import volunteering4 from "../assets/volunteering/tsyp11-1.jpg";
-import volunteering3 from "../assets/volunteering/indabax.jpg";
-import volunteering6 from "../assets/volunteering/mts2.jpg";
-import volunteering7 from "../assets/volunteering/tsyp12.png";
-import volunteering8 from "../assets/volunteering/indaba2.jfif";
+import volunteering1 from "../assets/volunteering/Pacte.jpg";
+import volunteering3 from "../assets/volunteering/RAS.png";
+import volunteering2 from "../assets/volunteering/radio.png";
+import volunteering4 from "../assets/volunteering/FORUM.jpg";
 
-export const HERO_CONTENT = `Motivated and forward-thinking ICT engineering graduate from the Higher School of Communication of Tunis (SUP’COM), with a strong interest in DevOps and cloud technologies. 
-During my academic journey, I gained hands-on experience with automation, CI/CD pipelines, infrastructure as code, and containerization tools. 
-I am proficient in Python and have worked on projects involving system integration and cloud deployment. 
-My leadership roles have enhanced my teamwork, problem-solving, and project management abilities. 
-Passionate about building scalable, reliable systems, I am eager to contribute to innovative DevOps initiatives that drive operational efficiency and technological progress.`;
 
-export const ABOUT_TEXT = `A DevOps enthusiast with a strong passion for innovation and technological advancement. 
-I combine technical curiosity with solid interpersonal skills, allowing me to collaborate effectively across teams. 
-Committed to continuous learning, I embrace new challenges that foster both personal and professional growth, while maintaining a balanced and adaptable mindset in a fast-evolving tech environment. `;
+export const HERO_CONTENT = `3rd-year ICT Engineering Student at SUP'COM, specializing in Artificial Intelligence. Actively seeking a 6-month Final Year Internship (PFE) starting February 2026. I aim to apply my AI expertise in a challenging professional environment and am particularly interested in opportunities that offer a solid foundation for growth and hands-on project experience.`;
+
+export const ABOUT_TEXT = `An AI enthusiast passionate about building intelligent systems that create tangible impact. My focus lies at the intersection of Generative AI (LLMs, AI Agents) and Classical AI (Deep Learning), powered by strong Data Engineering skills. I am currently expanding my expertise in Cloud Computing (AWS) to build and deploy scalable solutions. A curious and results-driven problem-solver, I am seeking a demanding internship that will serve as a platform for continuous learning and growth, allowing me to contribute meaningfully to ambitious projects while honing my technical and professional skills in an innovative setting. `;
 
 export const EXPERIENCES = [
   {
-    year: "February 2025 - June 2025",
-    role: "End-of-Studies - DevOps/GitOps - Intern",
-    company: "KPIT",
-    description: `Built an Android Virtual Machine using AOSP to simulate in-vehicle environments. Established gRPC-based communication between the virtual machine and the host system. Developed a real-time vehicle diagnostic interface using a Kotlin-based Android app and a cross-platform Qt application with QML and C++ for live data visualization. Automated the software delivery pipeline using GitLab CI/CD, Docker, and Kubernetes. Implemented GitOps principles with Argo CD for declarative, version-controlled deployments.`,
-    technologies: ["DevOps", "GitOps", "Android VM" , "Linux", "Kotlin", "C++", "Python", "QML", "AOPS", "gRPC", "Docker", "GitLab CI/CD","Kubernetes", "Argo CD"],
+    year: "September 2025 - Present",
+    role: "AI/DevOps - Intern",
+    company: "Converty",
+    description: `As part of a collaboration with the Tunisian fintech startup Converty, I worked on a project aimed at automating the monitoring of Facebook advertising activity for clients using Converty’s platforms. Since the company’s revenue is directly linked to the performance of its clients’ online sales, the solution was designed to track ad campaigns, detect inactive periods, and provide insights for timely interventions. Leveraging AI and DevOps practices, the system uses the Facebook Ads Library API, Apify, and Python to automatically collect, structure, and integrate advertising data (JSON/CSV) into internal tools. This automation reduced manual monitoring and helped optimize both client and company performance.`,
+    technologies: ["AI", "DevOps", "Python" , "Facebook Ads Library API", "Apify", "Web Scraping", "JSON/CSV", "Docker", "GitLab CI/CD"],
   },
   {
-    year: " September 2024 - January 2025",
-    role: "Generative AI Intern",
-    company: "EY Tunisia",
-    description: `Developed an LLM-based schema optimization tool that enhances the creation of DDL structures and SQL queries using open-source models. Utilized Starcoder 3B for SQL query optimization and Llama 3.2B for generating SQL context, enabling efficient and intelligent database design.`,
-    technologies: ["Python", "HuggingFace", "LangChain", "Pytorch", "StarCoder2-3B", "Llama3.2-3B-Instruct", "LLM", "DDL", "SAS", "SQL", "Transformers"],
+    year: "July 2025 – August 2025",
+    role: "Generative AI/Data Engineering Internship",
+    company: "KPIT Technologies",
+    description: `During my internship at KPIT, I worked on a critical challenge for the Data Engineering teams: automating repetitive and complex tasks, such as creating SQL queries and Grafana dashboards, which were time-consuming and error-prone. I contributed to the design and development of an intelligent system capable of automatically generating SQL queries and Grafana dashboards from natural language descriptions. The system leverages a ReAct agent (LangChain) powered by the Mistral LLM, capable of iterative reasoning to produce complex and accurate SQL queries. A dashboard generator, based on advanced prompt engineering, produces a valid JSON file ready for direct import into Grafana.`,
+    technologies: ["AI Agent", "LangChain", "LLM", "Mistral API", "Grafana API", "Python", "SQL","Prompt Engineering"],
   },
   {
-    year: "June 2024 - August 2024",
-    role: "Data Engineering & Cloud Intern",
-    company: "OliveSoft",
-    description: `Completed a Data Engineering and Cloud internship, focusing on the automation of employee onboarding and offboarding processes. 
-    Used Boomi Atmosphere to integrate multiple platforms, including Microsoft Azure, Atlassian, and BoondManager, enabling seamless API-based data exchange. 
-    Automated user account creation by linking Azure with Atlassian and implemented account provisioning on BoondManager Sandbox through REST API calls.`,
-    technologies: ["Boomi Atmosphere", "Microsoft Azure", "Atlassian", "BoondManager", "Groovy", "API REST", "Postman"],
+    year: "July 2024 – August 2024",
+    role: "Development Intern",
+    company: "Numeryx MEA",
+    description: `Full-stack design and development of the "CAR PARK" web application for automated vehicle and client management. Implementation of a MySQL database and a responsive interface using Bootstrap. Development of CRUD (Create, Read, Update, Delete) functionalities in PHP and secured access through user authentication with password encryption.An operational solution enhancing both efficiency and data security in car park management.`,
+    technologies: ["HTML,", "CSS", "JavaScript", "Bootstrap,", "PHP,", "MySQL", "XAMPP"],
   },
   {
-    year: " July 2023 - August 2023",
-    role: "  Software Engineering Intern",
-    company: "Primatec Engineering",
-    description: `Completed a Software Engineering internship, focusing on data modeling for Jenkins using UML diagrams. 
-    Designed class, use case, and sequence diagrams with PowerDesigner and SSMS to represent Jenkins workflows. 
-    Utilized Python to extract data and generate corresponding SQL tables, contributing to structured data analysis and system understanding.`,
-    technologies: ["Jenkins", "PowerDesigner", "SSMS", "SQL", "Python"],
+    year: "May 2025",
+    role: "Entrepreneurship Project Challenge",
+    company: "SUP’COM",
+    description: `Selected among the 8 finalists for a week-long challenge focused on innovative health-tech solutions. Led complete project management, including market research, competitive benchmarking, financial analysis, and development of a Business Model Canvas. The project centered on a connected intelligent patch capable of real-time dehydration detection, combining technological feasibility with a viable business strategy. Delivered a final presentation highlighting both the technical concept and the market potential.`,
+    technologies: [],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Solar System DevOps Automation",
+    title: "AI Assistant for Agricultural Risk Management ",
     image: project1,
+    video: "",
     description:
-      "An enhancement of a full-stack Solar System project (HTML, Express.js, MongoDB) focused on automating and optimizing development and deployment. Integrated a full GitLab CI/CD pipeline with automated testing, Dockerization, Kubernetes deployment, and vulnerability scanning to ensure reliable and secure delivery across environments.",
-    github: "https://github.com/faraheloumi/CI-CD-Pipeline-Azure-Kubernetes-For-Solar-System-Application",
-    date: "December 2024",
+      "Creating a smart AI assistant that actively helps farmers make better decisions in real time. Using LangChain and LLaMA-2, the agent continuously analyzes weather data from APIs and other risk factors to recommend the most suitable insurance coverage. Farmers can interact with the system through a Gradio interface, testing different scenarios and receiving actionable insights. The project combines cutting-edge AI with practical, real-world decision support to reduce risks and improve agricultural outcomes.",
+    date: "September 2025 – Ongoing",
   },
   {
-    title: "Real-Time Water Quality Monitoring and Prediction",
+    title: "AI Chatbot for Energy Optimization",
     image: project2,
+    video: "",
     description:
-      "A real-time water quality monitoring system built using AWS services. Utilizes Kinesis Data Streams, Lambda, and S3 for real-time ingestion and processing, and SageMaker for water quality forecasting. Data is visualized on Grafana dashboards, with Redshift, Athena, and Glue used for analytics and cataloging. Includes natural language interaction via an integrated LLM and secured API access through Ngrok.",
+      "Developing an AI chatbot for smart grids that helps households optimize energy usage in real time. Leveraging large language models (LLMs), the chatbot analyzes consumption data, provides actionable insights, and offers personalized energy-saving recommendations. Users can interact directly with the system to explore different scenarios, making energy management smarter, simpler, and more efficient.",
     github: "https://github.com/faraheloumi/AWS-MLOPS-WATER-QUALITY-INDEX-FORECAST-VISUALIZE-GRAFANA-GENAI-GPT2",
-    date: "October 2024 - January 2025",
+    date: "September 2025 – Ongoing",
   },
 
   {
-    title: "LLM-based Schema Optimization Tool",
+    title: "AI-Powered Human Life Detection System for Search and Rescue Operations",
     image: project3,
+    video: "",
     description:
-      "A tool that leverages open-source large language models to optimize the creation of DDL structures and SQL queries. Uses Llama 3.2B to generate SQL context and Starcoder 3B to enhance query performance, streamlining intelligent database design.",
+      "This project designs an intelligent system to detect survivors trapped under debris by combining FMCW radar and thermal imaging. Radar captures micro-movements like breathing, while thermal imaging identifies heat signatures. Using CWT/STFT signal processing and a late-fusion deep learning model (CNNs for radar, 3D-CNNs for thermal video, and an MLP for decision fusion), the system achieved 99% accuracy on a simulated dataset of 32,000 images. This significantly reduces false alarms and enhances the efficiency of search and rescue missions.",
     github: "https://github.com/faraheloumi/DATA-DEFINITION-LANGUAGE-OPTIMIZATION-GENAI-LANGCHAIN",
-    date: " September 2024- January 2025",
+    date: "Jan 2025 - June 2025",
   },
 
   {
-    title: "Fruit Vision – MLOps Project",
-    image: project4,
+    title: "EduBot – Intelligent Learning Assistant",
+    image: edubotImage,
+  // Local video file (EDUBOT demo)
+    video: edubotVideo,
     description:
-      "An end-to-end fruit detection system that uses a Detectron2 model to identify and count various fruit types. Integrated with a Flutter mobile app for real-time predictions via FastAPI, backed by Firebase authentication and MongoDB for data storage. Deployed on Microsoft Azure using Docker and Terraform for efficient cloud resource management.",
-    github: "https://github.com/faraheloumi/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform",
-    date: "January 2024 - June 2024",
-  },
-  {
-    title: "Full-Stack E-commerce Platform",
-    image: project5,
-    description:
-      "A simple e-commerce web application built with Angular 17 for the frontend and Spring Boot for the backend, using PostgreSQL as the database. Features include product browsing, cart management, order tracking, buyer-seller chat, and user account storage for faster checkout.",
+      "Developed a web platform with an intuitive interface for educational content, featuring an AI-powered chatbot to answer students’ course-related questions. Built using Java Spring Boot for the backend, Angular for the frontend, PostgreSQL for data management, and integrated with AI APIs to provide interactive learning support.",
     github: "https://github.com/faraheloumi/Livrili",
-    date: "January 2024 - March 2024",
+    date: "Nov 2024 - Dec 2024",
+  },
+
+  {
+    title: "QuickFood – Smart Food Ordering Platform",
+    image: quickfoodImage ,
+    video: quickfoodVideo,
+    description:
+      "Developed a full-stack web application for smart food ordering, allowing customers to browse restaurant categories, view menus, and place orders seamlessly. The system integrates secure user authentication, structured offer displays, and a streamlined ordering process. Built with Java Spring Boot and PostgreSQL for the backend, and a responsive frontend using HTML, CSS, JS, and Bootstrap to ensure an intuitive user experience.",
+    github: "https://github.com/faraheloumi/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform",
+    date: "Nov 2024 – Dec 2024",
   },
   
-  {
-    title: "Stock and Cryptocurrency Tracker App",
-    image: project6,
-    description:
-      "A mobile application designed to track stocks, exchange rates, and cryptocurrencies, providing a user-friendly platform for both experienced investors and beginners to stay informed and make smart financial decisions.",
-    github: "https://github.com/faraheloumi/FinanSync",
-    date: "April 2024 - July 2024",
-  },  
+
 ];
 
 export const CONTACT = {
   address: "Tunis, Tunisia",
-  phoneNo: "+216 58 141 788 ",
-  email: "farah.elloumi@supcom.tn",
+  phoneNo: "+216 25 951 732 ",
+  email: "ghofarne.mahfoudhi@supcom.tn",
 };
 
 export const CERTIFICATES = [
@@ -221,53 +208,102 @@ export const CERTIFICATES = [
 
 export const events = [
   {
-    title: "Community Manager - IEEE SUP'COM Student Branch",
-    description: "As the Community Manager of IEEE SUP'COM SB, I was responsible for coordinating internal communication, managing events, and promoting the branch’s activities. I collaborated with the executive team and various committees to ensure efficient project execution and active member engagement. I also designed visual content for social media and event promotion using tools like Photoshop and Illustrator, helping to strengthen the branch’s digital presence.",
-    date: "May 2023 - July 2024",
+    title: "Community Volunteering - PACTE Project",
+    description: "Collaborated with a Tunisian high school to provide financial and educational support. The project included fully refurbishing the school library, donating sports equipment, and organizing student activities. Delivered hands-on workshops such as Python programming, while also inviting external experts for sessions on topics like design thinking. This initiative combined infrastructure improvement with skill-building opportunities for students.",
+    date: "2024",
     image: volunteering1,
   },
   {
-    title: "HR Manager - IndabaX Tunisia 2023",
-    description: "As the HR Manager of IndabaX Tunisia 2023, I was responsible for overseeing volunteer coordination, managing internal communication, and ensuring smooth collaboration between teams. I contributed to creating a positive and efficient work environment throughout the event planning process. I also supported event logistics and helped foster an engaging experience for the AI and ML community in Tunisia.",
-    date: "Feb 2023 - May 2023",
-    image: volunteering3,
-  },
-
-  {
-    title: "Primary Organizer - IndabaX Tunisia 2024",
-    description: "Led the organization and coordination of the event, overseeing the Marketing & Communication team and ensuring alignment with the event’s strategic goals.",
-    date: "Feb 2024 - May 2024",
-    image: volunteering8,
-  },
-  {
-    title: "IEEE Tunisian Student & Young Professional Congress, 11th Edition",
-    description: "Representing IEEE SUPCOM SB, I participated in the 11th edition of TSYP as a Community Manager. I was also responsible for the STAR Challenge, where our team secured 1th place among 10+ Student Branches.",
-    date: "December 18-19-20, 2023",
-    image: volunteering7,
-  },
-  {
-    title: "IEEE Tunisian Student & Young Professional Congress, 10th Edition",
-    description: "During the 10th edition of TSYP, I actively contributed to multiple challenges, including supporting the development of the STAR Program and HAC Challenge.",
-    date: "December 19-20-21, 2022",
-    image: volunteering4,
-  },
-  {
-    title: "Metaverse Tunisian Summit 2.0 - Booth & Media Member",
-    description: "I was responsible for planning and executing event logistics while also handling media coverage. I ensured effective event promotion, engaged the audience through digital channels, and helped create a strong presence for the summit in the tech community.",
-    date: "November 24-25-26, 2023",
-    image: volunteering6,
-  },
-  {
-    title: "Metaverse Tunisian Summit 1.0 - Logistics Member",
-    description: "As a logistics team member, I played a crucial role in ensuring the smooth execution of the event. I coordinated venue setup, managed schedules, and provided on-site support to enhance the overall experience for participants and speakers.",
-    date: "November 25-26-27, 2022",
-    image: volunteering5,
-  },
-  {
-    title: "IEEE Wie International Leadership Summit Tunisia 2022 - Logistics Member",
-    description: "As a logistics team member, I played a crucial role in ensuring the smooth execution of the event. I coordinated venue setup, managed schedules, and provided on-site support to enhance the overall experience for participants and speakers.",
-    date: "November 5 & 6, 2022",
+    title: "Community Volunteering - Radio Jeune Tunisie",
+    description: "Produced a radio report in partnership with Radio Jeune Tunisie to present the PACTE community project, share its objectives, and call for support through book donations and other contributions to improve a Tunisian high school.",
+    date: "2024",
     image: volunteering2,
   },
 
+  {
+    title: "IEEE SUP’COM – Member of RAS Committee (Robotics and Automation Society)",
+    description: "Participated as a committee member in the Robotics and Automation Society, contributing to an internal competition where we developed a robot capable of autonomously following a model track. Gained hands-on experience in robotics design, programming, and teamwork.",
+    date: "2023",
+    image: volunteering3,
+  },
+  {
+    title: "Forum Sup’Com 2023 – Co-Design Manager",
+    description: "Participated in organizing the Sup’Com Forum as part of the design committee, creating and designing posters using Photoshop to visually promote the event.",
+    date: "2023",
+    image: volunteering4,
+  },
+
+];
+
+export const SKILLS = [
+  {
+    title: "Programming Languages",
+    items: ["Python", "C++", "MATLAB", "Java", "PHP", "SQL", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Frameworks & Web Development",
+    items: ["Spring Boot", "Angular", "Bootstrap"],
+  },
+  {
+    title: "Artificial Intelligence & Data Science",
+    items: [
+      "TensorFlow",
+      "PyTorch",
+      "CNNs",
+      "3D-CNNs",
+      "NLP",
+      "Mistral",
+      "LLaMA-2",
+      "LangChain",
+      "AI Agents",
+      "Prompt Engineering",
+    ],
+  },
+  {
+    title: "Data Engineering",
+    items: ["Pandas", "NumPy", "Data Visualization (Power BI, Grafana)"],
+  },
+  {
+    title: "Databases",
+    items: ["MySQL", "PostgreSQL", "SQL Server"],
+  },
+  {
+    title: "Cloud",
+    items: ["AWS"],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "VS Code", "Figma", "Postman", "IntelliJ", "Linux"],
+  },
+];
+
+export const EDUCATION = [
+  {
+    institution: "Higher School of Communication of Tunis (SUP'COM)",
+    degree: "ICT Engineering",
+    period: "2023 - Present",
+    subjects: [
+      "Artificial Intelligence",
+      "Data Engineering", 
+      "Cloud Computing",
+      "Machine Learning",
+      "LLM & Agents",
+      "Networking & Cybersecurity",
+      "Signal Processing"
+    ],
+    description: "Engineering track focused on AI, data engineering, and cloud infrastructure. Preparing for a final-year internship in 2026."
+  },
+  {
+    institution: "Preparatory Institute for Engineering Studies of Sfax (IPEIS)",
+    degree: "Pre-Engineering studies - Ranked 24/1500 at National Entrance Exams",
+    period: "2021 - 2023",
+    subjects: [
+      "Advanced Algebra",
+      "Probability & Statistics",
+      "Theoretical and Applied Physics", 
+      "Database management (SQL)",
+      "Python programming"
+    ],
+    description: "Intensive two-year program preparing for the highly competitive National Engineering Exam with focus on advanced mathematics, physics, and computer science."
+  }
 ];
