@@ -26,7 +26,7 @@ const Hero = () => {
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a href="#projects" className="btn-cta" aria-label="Voir mes projets">See Projects</a>
-              <a href="mailto:farah.elloumi@supcom.tn" className="inline-flex items-center rounded-md px-4 py-2 border border-white/10 text-white/90 hover:border-secondary transition-colors">Contact Me</a>
+              <a href="mailto:ghofarne.mahfoudhi@supcom.tn" className="inline-flex items-center rounded-md px-4 py-2 border border-white/10 text-white/90 hover:border-secondary transition-colors">Contact Me</a>
               <a href={cvPdf} download className="ml-2 text-sm text-white/70 hover:text-white">Download CV (PDF)</a>
             </div>
           </div>

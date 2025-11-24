@@ -1,9 +1,7 @@
 import project1 from "../assets/projects/agricultural.png";
 import project2 from "../assets/projects/Energy_Optimization.png";
 import project3 from "../assets/projects/Human_Life.png";
-import edubotVideo from "../assets/projects/EDUBOT.mp4";
 import edubotImage from "../assets/projects/EDUBOT.png";
-import quickfoodVideo from "../assets/projects/QuickFood.mp4";
 import quickfoodImage from "../assets/projects/QUICKFOOD.png";
 
 import certificate9 from "../assets/certificates/toeic.png";
@@ -20,6 +18,8 @@ import volunteering1 from "../assets/volunteering/Pacte.jpg";
 import volunteering3 from "../assets/volunteering/RAS.png";
 import volunteering2 from "../assets/volunteering/radio.png";
 import volunteering4 from "../assets/volunteering/FORUM.jpg";
+
+
 
 
 export const HERO_CONTENT = `3rd-year ICT Engineering Student at SUP'COM, specializing in Artificial Intelligence. Actively seeking a 6-month Final Year Internship (PFE) starting February 2026. I aim to apply my AI expertise in a challenging professional environment and am particularly interested in opportunities that offer a solid foundation for growth and hands-on project experience.`;
@@ -72,7 +72,7 @@ export const PROJECTS = [
     video: "",
     description:
       "Developing an AI chatbot for smart grids that helps households optimize energy usage in real time. Leveraging large language models (LLMs), the chatbot analyzes consumption data, provides actionable insights, and offers personalized energy-saving recommendations. Users can interact directly with the system to explore different scenarios, making energy management smarter, simpler, and more efficient.",
-    github: "https://github.com/faraheloumi/AWS-MLOPS-WATER-QUALITY-INDEX-FORECAST-VISUALIZE-GRAFANA-GENAI-GPT2",
+  github: "",
     date: "September 2025 – Ongoing",
   },
 
@@ -82,28 +82,28 @@ export const PROJECTS = [
     video: "",
     description:
       "This project designs an intelligent system to detect survivors trapped under debris by combining FMCW radar and thermal imaging. Radar captures micro-movements like breathing, while thermal imaging identifies heat signatures. Using CWT/STFT signal processing and a late-fusion deep learning model (CNNs for radar, 3D-CNNs for thermal video, and an MLP for decision fusion), the system achieved 99% accuracy on a simulated dataset of 32,000 images. This significantly reduces false alarms and enhances the efficiency of search and rescue missions.",
-    github: "https://github.com/faraheloumi/DATA-DEFINITION-LANGUAGE-OPTIMIZATION-GENAI-LANGCHAIN",
+  github: "",
     date: "Jan 2025 - June 2025",
   },
 
   {
     title: "EduBot – Intelligent Learning Assistant",
     image: edubotImage,
-  // Local video file (EDUBOT demo)
-    video: edubotVideo,
+  // Local video removed from repo; leave blank or replace with remote URL
+    video: "https://youtu.be/GfidG2nZmgE",
     description:
       "Developed a web platform with an intuitive interface for educational content, featuring an AI-powered chatbot to answer students’ course-related questions. Built using Java Spring Boot for the backend, Angular for the frontend, PostgreSQL for data management, and integrated with AI APIs to provide interactive learning support.",
-    github: "https://github.com/faraheloumi/Livrili",
+  github: "",
     date: "Nov 2024 - Dec 2024",
   },
 
   {
     title: "QuickFood – Smart Food Ordering Platform",
     image: quickfoodImage ,
-    video: quickfoodVideo,
+    video: "https://youtu.be/mTGeE0fgKWg",
     description:
       "Developed a full-stack web application for smart food ordering, allowing customers to browse restaurant categories, view menus, and place orders seamlessly. The system integrates secure user authentication, structured offer displays, and a streamlined ordering process. Built with Java Spring Boot and PostgreSQL for the backend, and a responsive frontend using HTML, CSS, JS, and Bootstrap to ensure an intuitive user experience.",
-    github: "https://github.com/faraheloumi/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform",
+  github: "",
     date: "Nov 2024 – Dec 2024",
   },
   
@@ -123,7 +123,7 @@ export const CERTIFICATES = [
     issuer: "Educational Testing Service (ETS)",
     description:
       "Earners of this badge have taken the AWS Academy Cloud Foundations course.",
-    credlyLink: "https://www.linkedin.com/posts/farah-elloumi-735ab1269_i-am-thrilled-to-share-that-i-have-achieved-activity-7355888691489185793-s_vX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHWDdkB4xoSYPO6p34W-qKoN4EakNB_AwM",
+  credlyLink: "",
     image: certificate9,
   },
   {

@@ -70,7 +70,7 @@ This portfolio is a showcase of my skills, experiences, and achievements. Feedba
 --- 
 
 ## Contact
-If you have any inquiries, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/farah-elloumi-735ab1269/) or [Email](farah.elloumi@supcom.tn).
+If you have any inquiries, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ghofrane-mahfoudhi/) or [Email](ghofarne.mahfoudhi@supcom.tn).
 
 ---
 

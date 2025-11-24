@@ -79,13 +79,47 @@ const Projects = () => {
               <div className="bg-neutral-900 rounded-lg overflow-hidden w-full h-full">
                 <div className="relative">
                   {activeMedia.type === "video" ? (
-                    <video
-                      src={activeMedia.src}
-                      controls
-                      autoPlay
-                      muted={false}
-                      className="w-full h-[80vh] sm:h-[90vh] bg-black object-contain"
-                    />
+                    // If the source is a YouTube link, render an iframe embed.
+                    (() => {
+                      const src = activeMedia.src || "";
+                      const isYouTube = /youtu(?:\.be|be\.com)/i.test(src);
+                      if (isYouTube) {
+                        // extract video id
+                        let videoId = "";
+                        try {
+                          if (src.includes("youtu.be/")) {
+                            videoId = src.split("youtu.be/")[1].split(/[?&]/)[0];
+                          } else if (src.includes("youtube.com/watch")) {
+                            const params = new URL(src).searchParams;
+                            videoId = params.get("v") || "";
+                          }
+                        } catch {
+                          videoId = "";
+                        }
+                        const embed = videoId ? `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0` : src;
+                        return (
+                          <iframe
+                            src={embed}
+                            title={activeMedia.title}
+                            className="w-full h-[80vh] sm:h-[90vh] bg-black object-contain"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        );
+                      }
+
+                      // Otherwise assume it's a direct video URL that the <video> element can play
+                      return (
+                        <video
+                          src={src}
+                          controls
+                          autoPlay
+                          muted={false}
+                          className="w-full h-[80vh] sm:h-[90vh] bg-black object-contain"
+                        />
+                      );
+                    })()
                   ) : (
                     <img src={activeMedia.src} alt={activeMedia.title} className="w-full h-[80vh] sm:h-[90vh] object-contain bg-black" />
                   )}
