@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants";
-import profile from "../assets/profile.jpg";
-import cvPdf from "../CV/CV_GhofraneMahfoudhi_2026_Ang.pdf";
+import profile from "../assets/profile.png";
+import cvPdf from "../CV/main (13).pdf";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a href="#projects" className="btn-cta" aria-label="Voir mes projets">See Projects</a>
               <a href="mailto:ghofrane.mahfoudhi@supcom.tn" className="inline-flex items-center rounded-md px-4 py-2 border border-white/10 text-white/90 hover:border-secondary transition-colors">Contact Me</a>
-              <a href={cvPdf} download className="ml-2 text-sm text-white/70 hover:text-white">Download CV (PDF)</a>
+              <a href={cvPdf} download="CV_GhofraneMahfoudhi_2026.pdf" className="ml-2 text-sm text-white/70 hover:text-white">Download CV (PDF)</a>
             </div>
           </div>
         </motion.div>
