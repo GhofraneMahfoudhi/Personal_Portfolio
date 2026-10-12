@@ -1,44 +1,56 @@
-import project1 from "../assets/projects/agricultural.png";
+import project1 from "../assets/projects/Agricultural.png";
 import project2 from "../assets/projects/Energy_Optimization.png";
 import project3 from "../assets/projects/Human_Life.png";
 import edubotImage from "../assets/projects/EDUBOT.png";
 import quickfoodImage from "../assets/projects/QUICKFOOD.png";
+import polytechniqueRagImage from "../assets/projects/Polytechnique_RAG.jpg";
+import campaignMonitoringPhoto from "../assets/projects/Campaign_Monitoring.jpg";
+import kpitDataEngineeringImage from "../assets/projects/KPIT_Data_Engineering.jpg";
 
 import certificate9 from "../assets/certificates/toeic.png";
 import certificate1 from "../assets/certificates/docker.png";
 import certificate2 from "../assets/certificates/ansible.png";
 import certificate3 from "../assets/certificates/kubernetes.png";
 import certificate4 from "../assets/certificates/linux.png";
-import certificate5 from "../assets/certificates/machine_learning.png";
 import certificate6 from "../assets/certificates/cloud.png";
 import certificate7 from "../assets/certificates/CKA-certification.png";
 import certificate8 from "../assets/certificates/Gitlab-CI-CD-certification.png";
+import awsMachineLearningCertificate from "../assets/certificates/aws_ml_2025.png";
+import ccnaCertificate from "../assets/certificates/ccna_networking.png";
 
 import volunteering1 from "../assets/volunteering/Pacte.jpg";
 import volunteering3 from "../assets/volunteering/RAS.png";
-import volunteering2 from "../assets/volunteering/radio.png";
+import volunteering2 from "../assets/volunteering/Radio.png";
 import volunteering4 from "../assets/volunteering/FORUM.jpg";
+import volunteering5 from "../assets/volunteering/SEMLA_2026.jpg";
 
 
 
 
-export const HERO_CONTENT = `3rd-year ICT Engineering Student at SUP'COM, specializing in Artificial Intelligence. Actively seeking a 6-month Final Year Internship (PFE) starting February 2026. I aim to apply my AI expertise in a challenging professional environment and am particularly interested in opportunities that offer a solid foundation for growth and hands-on project experience.`;
+export const HERO_CONTENT = `ICT Engineer from SUP’COM with a strong interest in Artificial Intelligence. Through academic projects and professional experiences in Tunisia and Canada, I have gained hands-on experience in designing and developing AI systems to address real-world challenges. I am eager to continue growing through challenging projects and new opportunities.`;
 
-export const ABOUT_TEXT = `An AI enthusiast passionate about building intelligent systems that create tangible impact. My focus lies at the intersection of Generative AI (LLMs, AI Agents) and Classical AI (Deep Learning), powered by strong Data Engineering skills. I am currently expanding my expertise in Cloud Computing (AWS) to build and deploy scalable solutions. A curious and results-driven problem-solver, I am seeking a demanding internship that will serve as a platform for continuous learning and growth, allowing me to contribute meaningfully to ambitious projects while honing my technical and professional skills in an innovative setting. `;
+export const ABOUT_TEXT = `I am a dedicated and ambitious engineer who values hard work, perseverance and continuous learning. My academic journey, from earning a Scientific Baccalaureate with Highest Honors to ranking 24th among 1,500 candidates in the national engineering entrance examination, reflects my commitment to excellence. I graduated from SUP’COM, one of Tunisia’s leading engineering schools, and completed my final-year project internship in a professional research environment in Canada. Today, as an ICT Engineer specialized in Artificial Intelligence, I am particularly interested in the evolution of AI, from Deep Learning to Generative AI and Agentic AI. Curious, adaptable and always eager to learn, I enjoy stepping outside my comfort zone, embracing new challenges and continuously developing my skills.`;
 
 export const EXPERIENCES = [
   {
-    year: "September 2025 - Present",
-    role: "AI/DevOps - Intern",
+    year: "March 2026 - Present",
+    role: "AI Research Intern",
+    company: "Polytechnique Montréal - SEMLA Laboratory",
+    description: `Design and development of a framework aimed at improving the reliability of Retrieval-Augmented Generation (RAG) systems applied to evolving policy documents. The framework identifies significant changes between document versions, organizes information into precise evidence units, and leverages a structural and temporal graph for version-aware and traceable evidence retrieval. The project aims to reduce obsolete or incomplete information and improve the reliability, faithfulness and traceability of LLM-generated responses. After completing the project on-site at Polytechnique Montréal, the work is currently continuing remotely, with the finalization of a dedicated scientific article.`,
+    technologies: ["Python", "LLMs", "RAG", "GraphRAG", "Hugging Face", "Sentence Transformers", "PyTorch", "Weaviate", "DeepEval", "GEval", "LLM-as-a-Judge", "FastAPI", "HTML", "CSS", "JavaScript", "Docker", "Git"],
+  },
+  {
+    year: "September 2025 - January 2026",
+    role: "AI / Data Intern",
     company: "Converty",
-    description: `As part of a collaboration with the Tunisian fintech startup Converty, I worked on a project aimed at automating the monitoring of Facebook advertising activity for clients using Converty’s platforms. Since the company’s revenue is directly linked to the performance of its clients’ online sales, the solution was designed to track ad campaigns, detect inactive periods, and provide insights for timely interventions. Leveraging AI and DevOps practices, the system uses the Facebook Ads Library API, Apify, and Python to automatically collect, structure, and integrate advertising data (JSON/CSV) into internal tools. This automation reduced manual monitoring and helped optimize both client and company performance.`,
-    technologies: ["AI", "DevOps", "Python" , "Facebook Ads Library API", "Apify", "Web Scraping", "JSON/CSV", "Docker", "GitLab CI/CD"],
+    description: `Designed and developed a platform to automate the monitoring and analysis of Converty clients’ Facebook advertising activity. The system identifies Facebook pages associated with e-commerce domains, collects active advertisements, determines whether they redirect to Converty or competing platforms, and provides analytical reports to support client monitoring and strategic decision-making.`,
+    technologies: ["Python", "Facebook Ads Library", "Apify", "MongoDB", "Streamlit", "Docker"],
   },
   {
     year: "July 2025 – August 2025",
     role: "Generative AI/Data Engineering Internship",
     company: "KPIT Technologies",
-    description: `During my internship at KPIT, I worked on a critical challenge for the Data Engineering teams: automating repetitive and complex tasks, such as creating SQL queries and Grafana dashboards, which were time-consuming and error-prone. I contributed to the design and development of an intelligent system capable of automatically generating SQL queries and Grafana dashboards from natural language descriptions. The system leverages a ReAct agent (LangChain) powered by the Mistral LLM, capable of iterative reasoning to produce complex and accurate SQL queries. A dashboard generator, based on advanced prompt engineering, produces a valid JSON file ready for direct import into Grafana.`,
+    description: `During my internship at KPIT, I worked on a critical challenge for the Data Engineering teams: automating repetitive and complex tasks, such as creating SQL queries and Grafana dashboards, which were time-consuming and error-prone. I contributed to the design and development of an intelligent system capable of automatically generating SQL queries and Grafana dashboards from natural language descriptions. The system leverages a ReAct agent powered by the Mistral LLM, capable of iterative reasoning to produce complex and accurate SQL queries. A dashboard generator, based on advanced prompt engineering, produces a valid JSON file ready for direct import into Grafana.`,
     technologies: ["AI Agent", "LangChain", "LLM", "Mistral API", "Grafana API", "Python", "SQL","Prompt Engineering"],
   },
   {
@@ -58,6 +70,27 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Framework for Evolving Policy Documents with RAG",
+    image: polytechniqueRagImage,
+    video: "",
+    description: "Designed a research framework that helps RAG systems stay reliable when policy documents change. The approach detects meaningful changes across versions, organizes evidence units and uses structural and temporal graphs to retrieve traceable evidence for LLM responses.",
+    date: "March 2026 - Present",
+  },
+  {
+    title: "Automated Facebook Campaign Monitoring Platform",
+    image: campaignMonitoringPhoto,
+    video: "",
+    description: "Designed and developed a platform to automate the monitoring and analysis of Converty clients’ Facebook advertising activity. The system identifies Facebook pages associated with e-commerce domains, collects active advertisements, determines whether they redirect to Converty or competing platforms, and provides analytical reports to support client monitoring and strategic decision-making.",
+    date: "September 2025 - January 2026",
+  },
+  {
+    title: "Natural-Language Data Engineering Agent",
+    image: kpitDataEngineeringImage,
+    video: "",
+    description: "Built an intelligent assistant that turns natural-language descriptions into SQL queries and Grafana dashboards. The solution combines LangChain, LLMs, prompt engineering and Grafana APIs to automate repetitive data engineering tasks.",
+    date: "July 2025 - August 2025",
+  },
   {
     title: "AI Assistant for Agricultural Risk Management ",
     image: project1,
@@ -113,7 +146,7 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Tunis, Tunisia",
   phoneNo: "+216 25 951 732 ",
-  email: "ghofarne.mahfoudhi@supcom.tn",
+  email: "ghofrane.mahfoudhi@supcom.tn",
 };
 
 export const CERTIFICATES = [
@@ -136,13 +169,21 @@ export const CERTIFICATES = [
     image: certificate6,
   },
   {
-    title: "AWS Academy Graduate - AWS Academy Machine Learning Foundations",
-    date: "October 19, 2024",
+    title: "AWS Academy Graduate - Machine Learning Foundations",
+    date: "October 7, 2025",
     issuer: "Amazon Web Services (AWS)",
     description:
       "Earners of this badge have completed the AWS Academy Machine Learning Foundations course.",
-    credlyLink: "https://www.credly.com/badges/b24a66d6-6139-48a7-9137-ed7a1cfe651b",
-    image: certificate5,
+    credlyLink: "https://www.credly.com/badges/9d459123-8da5-4781-af18-a1c8049d9a84",
+    image: awsMachineLearningCertificate,
+  },
+  {
+    title: "CCNA: Introduction to Networks",
+    date: "September 23, 2024",
+    issuer: "Cisco Networking Academy",
+    description: "Student-level credential covering foundational networking concepts and practices.",
+    credlyLink: "https://www.credly.com/badges/94ad94b2-8098-417d-b61c-278d307c948b",
+    image: ccnaCertificate,
   },
 
   {
@@ -208,10 +249,17 @@ export const CERTIFICATES = [
 
 export const events = [
   {
+    title: "SEMLA 2026 - Engineering Trustworthy and Cost-Effective AI Multi-Agents Conference",
+    description: "Participated in the SEMLA 2026 conference focused on engineering trustworthy and cost-effective AI multi-agent systems, hosted in the research environment of Polytechnique Montréal.",
+    date: "2026",
+    image: volunteering5,
+  },
+  {
     title: "Community Volunteering - PACTE Project",
     description: "Collaborated with a Tunisian high school to provide financial and educational support. The project included fully refurbishing the school library, donating sports equipment, and organizing student activities. Delivered hands-on workshops such as Python programming, while also inviting external experts for sessions on topics like design thinking. This initiative combined infrastructure improvement with skill-building opportunities for students.",
     date: "2024",
     image: volunteering1,
+    link: "https://www.facebook.com/profile.php?id=61558451337269",
   },
   {
     title: "Community Volunteering - Radio Jeune Tunisie",
@@ -237,61 +285,54 @@ export const events = [
 
 export const SKILLS = [
   {
+    title: "Artificial Intelligence & Machine Learning",
+    items: ["Deep Learning", "Generative AI", "Agentic AI", "LLMs", "RAG", "AI Agents", "Sentence Transformers", "PyTorch", "TensorFlow", "Prompt Engineering", "OCR"],
+  },
+  {
     title: "Programming Languages",
-    items: ["Python", "C++", "MATLAB", "Java", "PHP", "SQL", "HTML", "CSS", "JavaScript"],
+    items: ["Python", "C++", "MATLAB", "Java", "PHP", "SQL"],
   },
   {
-    title: "Frameworks & Web Development",
-    items: ["Spring Boot", "Angular", "Bootstrap"],
+    title: "Web Development",
+    items: ["HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Artificial Intelligence & Data Science",
-    items: [
-      "TensorFlow",
-      "PyTorch",
-      "CNNs",
-      "3D-CNNs",
-      "NLP",
-      "Mistral",
-      "LLaMA-2",
-      "LangChain",
-      "AI Agents",
-      "Prompt Engineering",
-    ],
+    title: "Backend & APIs",
+    items: ["FastAPI"],
   },
   {
-    title: "Data Engineering",
-    items: ["Pandas", "NumPy", "Data Visualization (Power BI, Grafana)"],
-  },
-  {
-    title: "Databases",
-    items: ["MySQL", "PostgreSQL", "SQL Server"],
+    title: "Databases & Vector Stores",
+    items: ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Weaviate"],
   },
   {
     title: "Cloud",
-    items: ["AWS"],
+    items: ["AWS", "Microsoft Azure"],
+  },
+  {
+    title: "Data & Visualization",
+    items: ["Excel", "Power BI", "Grafana"],
   },
   {
     title: "Tools",
-    items: ["Git", "VS Code", "Figma", "Postman", "IntelliJ", "Linux"],
+    items: ["Docker", "Git"],
   },
 ];
 
 export const EDUCATION = [
   {
-    institution: "Higher School of Communication of Tunis (SUP'COM)",
-    degree: "ICT Engineering",
-    period: "2023 - Present",
+    institution: "Higher School of Communication of Tunis (SUP’COM)",
+    degree: "ICT Engineering Degree",
+    period: "2023–2026",
     subjects: [
-      "Artificial Intelligence",
-      "Data Engineering", 
+      "Machine Learning & Deep Learning",
+      "Generative AI",
+      "Data Engineering",
       "Cloud Computing",
-      "Machine Learning",
-      "LLM & Agents",
-      "Networking & Cybersecurity",
-      "Signal Processing"
+      "IoT",
+      "Web Development",
+      "Networking & Cybersecurity"
     ],
-    description: "Engineering track focused on AI, data engineering, and cloud infrastructure. Preparing for a final-year internship in 2026."
+    description: "Engineering education combining Artificial Intelligence, data engineering and modern computing systems with a strong foundation in telecommunications, networking and signal processing."
   },
   {
     institution: "Preparatory Institute for Engineering Studies of Sfax (IPEIS)",
@@ -305,5 +346,12 @@ export const EDUCATION = [
       "Python programming"
     ],
     description: "Intensive two-year program preparing for the highly competitive National Engineering Exam with focus on advanced mathematics, physics, and computer science."
+  },
+  {
+    institution: "Lycée Hédi Souissi",
+    degree: "Scientific Baccalaureate - Very Good Honors",
+    period: "2020 - 2021",
+    subjects: ["Mathematics", "Physics", "Computer Science"],
+    description: "Scientific secondary education in Sfax, Tunisia."
   }
 ];

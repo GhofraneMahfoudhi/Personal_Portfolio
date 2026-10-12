@@ -12,13 +12,13 @@ const Education = () => {
                 <div className="flex flex-col">
                   <div>
                     <h3 className="text-xl font-semibold text-white">{edu.institution}</h3>
-                    <div className="text-sm text-muted/80">{edu.degree} • <span className="opacity-80">{edu.period}</span></div>
+                    <div className="text-sm text-muted/80">{edu.degree} <span className="mx-1">|</span> <span className="opacity-80">{edu.period}</span></div>
                   </div>
 
                   <p className="mt-4 text-sm text-muted/70">{edu.description}</p>
 
                   {/* subjects below description */}
-                  <div className="text-sm text-muted/70 mt-3">{edu.subjects.join(' • ')}</div>
+                  <div className="text-sm text-muted/70 mt-3"><span className="font-semibold text-white/80">Areas of Focus:</span> {edu.subjects.join(' • ')}</div>
                 </div>
               </div>
             ))}

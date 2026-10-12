@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants";
 import profile from "../assets/profile.jpg";
-import cvPdf from "../CV/Ghofrane_Mahfoudhi_CV_AI_Intern.pdf";
+import cvPdf from "../CV/CV_GhofraneMahfoudhi_2026_Ang.pdf";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
         <motion.div className="w-full lg:w-1/2" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="flex flex-col items-center lg:items-start lg:pl-8">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="px-3 py-1 rounded-full text-sm bg-[#1f0522] text-secondary font-medium">Engineering Student</span>
+              <span className="px-3 py-1 rounded-full text-sm bg-[#1f0522] text-secondary font-medium">ICT Engineer</span>
               <span className="px-3 py-1 rounded-full text-sm bg-[#07121a] text-accent font-medium whitespace-nowrap">AI • Generative Models • Agentic Systems</span>
             </div>
 
@@ -18,7 +18,7 @@ const Hero = () => {
               Ghofrane Mahfoudhi
             </h1>
 
-            <p className="text-xl font-semibold text-white/90 mb-4">ICT Engineering Student — SUP&apos;COM</p>
+            <p className="text-xl font-semibold text-white/90 mb-4">ICT Engineer · Artificial Intelligence</p>
 
             <p className="my-4 max-w-xl py-2 text-lg leading-relaxed text-white/75">
               {HERO_CONTENT}
@@ -26,7 +26,7 @@ const Hero = () => {
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a href="#projects" className="btn-cta" aria-label="Voir mes projets">See Projects</a>
-              <a href="mailto:ghofarne.mahfoudhi@supcom.tn" className="inline-flex items-center rounded-md px-4 py-2 border border-white/10 text-white/90 hover:border-secondary transition-colors">Contact Me</a>
+              <a href="mailto:ghofrane.mahfoudhi@supcom.tn" className="inline-flex items-center rounded-md px-4 py-2 border border-white/10 text-white/90 hover:border-secondary transition-colors">Contact Me</a>
               <a href={cvPdf} download className="ml-2 text-sm text-white/70 hover:text-white">Download CV (PDF)</a>
             </div>
           </div>

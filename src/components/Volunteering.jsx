@@ -11,16 +11,16 @@ const Volunteering = () => {
 
       {/* Liste des événements */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {events.map((event, index) => (
+        {events.map((event) => (
           <motion.div
-            key={index}
+            key={event.title}
             className="relative group overflow-hidden rounded-2xl shadow-lg ring-1 ring-secondary/10 neon-hover"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
-            {/* If first event, link image to FB page */}
-            {index === 0 ? (
-              <a href="https://www.facebook.com/profile.php?id=61558451337269" target="_blank" rel="noreferrer">
+            {/* Link only events that explicitly provide an external page */}
+            {event.link ? (
+              <a href={event.link} target="_blank" rel="noreferrer">
                 <img
                   src={event.image}
                   alt={event.title}

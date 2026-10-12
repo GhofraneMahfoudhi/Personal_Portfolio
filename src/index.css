@@ -70,3 +70,8 @@
 @media (min-width: 1024px) {
   .container { max-width: 1100px; }
 }
+
+.section-title-wrap { position: relative; }
+.back-to-top {
+  @apply absolute right-0 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-white/60 transition hover:-translate-y-[calc(50%+2px)] hover:border-secondary hover:text-secondary;
+}

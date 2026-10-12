@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Automated campaign monitoring</title><desc id="desc">Abstract dashboard for monitoring advertising campaigns.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a1b"/><stop offset="1" stop-color="#102c42"/></linearGradient></defs>
+  <rect width="1200" height="700" rx="36" fill="url(#bg)"/><rect x="110" y="180" width="980" height="360" rx="24" fill="#0b0b0f" stroke="#6ee7b7" stroke-opacity=".45" stroke-width="4"/><path d="M190 450 C300 390 350 470 470 360 S680 420 780 290 S950 300 1030 225" fill="none" stroke="#6ee7b7" stroke-width="10"/><g fill="#a78bfa"><circle cx="190" cy="450" r="13"/><circle cx="470" cy="360" r="13"/><circle cx="780" cy="290" r="13"/><circle cx="1030" cy="225" r="13"/></g><text x="82" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="700">CAMPAIGN MONITORING</text><text x="84" y="145" fill="#6ee7b7" font-family="Arial, sans-serif" font-size="20">Automation • Analytics • Actionable insights</text>
+</svg>

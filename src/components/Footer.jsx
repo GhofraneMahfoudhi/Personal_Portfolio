@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-4">
           {/* Texte copyright */}
           <p className="text-white/70">
-            © 2025 Ghofrane Mahfoudhi. All rights reserved.
+            © 2026 Ghofrane Mahfoudhi. All rights reserved.
           </p>
 
           {/* Icônes réseaux sociaux */}
           <div className="flex space-x-6 text-2xl text-white">
             <a 
-              href="https://www.linkedin.com/in/ghofrane-mahfoudhi//" 
+              href="https://www.linkedin.com/in/ghofrane-mahfoudhi/?isSelfProfile=true"
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-secondary transition-colors"

@@ -17,17 +17,17 @@ const AboutMe = () => {
           {
             icon: "🧑‍💻",
             title: "Passion for AI Innovation",
-            text: "Driven by a strong passion for Artificial Intelligence, I am fascinated by its potential to transform data into intelligent solutions. I am particularly skilled in both generative AI (LLMs, agents) and deep learning, which I have successfully applied in real-world projects such as AI-powered rescue systems and intelligent assistants. I am eager to contribute to the development of cutting-edge intelligent systems that solve complex challenges",
+            text: "My passion for Artificial Intelligence lies in understanding how intelligent systems learn, reason and generate solutions. From Deep Learning to Generative AI, LLMs and Agentic AI, I am fascinated by the rapid evolution of these technologies and their growing capabilities. I am particularly interested in developing intelligent systems that combine learning, reasoning and autonomous decision-making to tackle increasingly complex challenges.",
           },
           {
             icon: "👥",
             title: "Interpersonal and Collaborative Skills",
-            text: "I thrive in team environments and integrate seamlessly into groups, bringing positive energy and a collaborative spirit to every project. My experience in group projects—from academic challenges to community initiatives like the PACTE Project—has strengthened my ability to communicate clearly, adapt quickly, and contribute effectively toward shared goals.",
+            text: "I value collaboration, clear communication and mutual respect, and I adapt easily to diverse teams and working environments. I approach challenges with a proactive mindset, a strong sense of responsibility and a willingness to learn from others. I am comfortable taking initiative, exchanging ideas and working collaboratively toward shared goals, while remaining adaptable and committed to delivering quality results.",
           },
           {
             icon: "🌿",
             title: "Commitment to Growth and Balance",
-            text: "I am deeply passionate about continuous learning and tackling new challenges, both technical and human-centered. At the same time, I believe in maintaining a healthy balance by staying active, engaged in extracurricular activities, and pursuing personal interests that fuel creativity and well-being.",
+            text: "I believe that growth comes from continuous learning, stepping beyond familiar boundaries and embracing new experiences. I strive to develop both personally and professionally by remaining curious, challenging myself and learning from the people around me. Beyond my academic and professional pursuits, I value staying active, exploring new interests and maintaining a healthy balance that supports creativity, well-being and long-term growth.",
           },
         ].map((item, index) => (
           <motion.div
