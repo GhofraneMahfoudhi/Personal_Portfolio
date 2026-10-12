@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants";
 import profile from "../assets/profile.png";
-import cvPdf from "../CV/main (13).pdf";
+import cvPdf from "../CV/main (14).pdf";
 import { motion } from "framer-motion";
 
 const Hero = () => {
